@@ -15,7 +15,7 @@
     <title>Portfolio - Dea Kirania</title>
   </head>
   <body class="font-lato">
-    <section class="fixed z-50 w-full top-0">
+    <section class="sticky z-50 w-full top-0">
       <nav class="bg-white drop-shadow-xl">
         <div class="max-w-7xl mx-auto px-4 py-1">
           <div class="flex justify-between">
@@ -63,7 +63,7 @@
     </section>
     
     <!-- Hero Section Start -->
-    <section id="home" class="lg:pt-28 pt-40">
+    <section id="home" class="lg:pt-14 pt-40">
       <div class="lg:px-32 container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
@@ -92,23 +92,51 @@
     <!-- About Section Start -->
     <section id="about" class="pt-32 pb-32 bg-dark">
       <div class="container lg:px-32">
-        <div class="flex flex-wrap items-center">
+        <div class="flex justify-center">
+          <h4 class="font-bold uppercase text-primary text-2xl mb-10 border-b-2 border-primary pb-1 ">About Me</h4>   
+        </div>
+        <div class="flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2">
-            <div class="flex">
-              <h4 class="font-bold uppercase text-primary text-lg mb-3 border-b-2 border-primary pb-1 ">About Me</h4>   
-            </div>
             <h2 class="font-bold text-white text-3xl mb-5 max-w-md lg:text-4xl">Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
             <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quibusdam totam perspiciatis sed temporibus tempora fuga voluptatem eaque eum esse?</p>
-          </div>
-          <div class="w-full px-4 lg:w-1/2">
-            <h4 class="font-semibold text-white text-3xl mb-4 lg:text-3xl lg:pt-10">Get In Touch</h4>
-            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, repellat. Voluptatem eaque maiores sapiente reiciendis.</p>
-            <div class="flex items-center text-primary">
+            <div class="flex items-center text-primary mt-5">
               <!-- Instagram -->
               <a href="https://www.instagram.com/agungdeaa/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out"><i class="fa-brands fa-instagram"></i></a>
               <!-- Linked In -->
               <a href="https://www.linkedin.com/in/kadek-denny-260617220" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out"><i class="fa-brands fa-linkedin-in"></i></i></a>
             </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h4 class="font-semibold text-white text-3xl mb-4 lg:text-3xl mt-10 lg:mt-0">Get In Touch</h4>
+            <form action="mailto:gungdeaputri22@gmail.com" method="post" enctype="text/plain">
+              <div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                <div>
+                  <span class="uppercase text-sm text-secondary font-bold">Full Name</span>
+                  <input class="w-full bg-transparent text-white border-b border-secondary hover:border-b-2 focus:border-b-2 hover:border-primary mt-2 p-3 focus:border-primary  focus:outline-none focus:shadow-outline transition-colors duration-300 ease-in-out"
+                    type="text" placeholder="Enter your full name" name="name">
+                </div>
+                <div>
+                  <span class="uppercase text-sm text-secondary font-bold">Email</span>
+                  <input class="w-full bg-transparent text-white border-b border-secondary hover:border-b-2 focus:border-b-2 hover:border-primary mt-2 p-3 focus:border-primary  focus:outline-none focus:shadow-outline transition-colors duration-300 ease-in-out"
+                    type="text" placeholder="Enter your email" name="email">
+                </div>
+              </div>
+              <div class="mt-8">
+                <span class="uppercase text-sm text-secondary font-bold">Message</span>
+                <textarea
+                  class="w-full h-32 bg-transparent text-white border-b border-secondary hover:border-b-2 focus:border-b-2 hover:border-primary mt-2 p-3 focus:border-primary  focus:outline-none focus:shadow-outline" type="text" placeholder="Enter your message" name="message"></textarea transition-colors duration-300 ease-in-out>
+              </div>
+              <div class="mt-8 flex justify-center gap-2">
+                <button type="submit"
+                  class="uppercase text-sm font-bold tracking-wide bg-primary text-white p-3 w-full rounded-lg hover:shadow-lg hover:text-dark transition duration-300 ease-in-out" value="send">
+                  Send
+                </button>
+                <button type="reset"
+                  class="uppercase text-sm font-bold tracking-wide bg-primary text-white p-3 w-full rounded-lg hover:shadow-lg hover:text-dark transition duration-300 ease-in-out" value="reset">
+                  Reset
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -183,51 +211,6 @@
       </div>
     </section>
     <!-- Projects Section End -->
-
-    <!-- Contact Section Start -->
-    <section id="contact" class="pt-32">
-      <div class="container lg:px-32">
-        <div class="flex justify-center mb-10 px-4">
-          <h2 class="font-bold uppercase text-primary text-2xl border-b-2 border-primary pb-1">Contact Me</h2>
-        </div>
-        <div
-            class="grid gap-8 grid-cols-1 md:grid-cols-2 p-10 lg:p-16 mx-4 bg-dark text-primary rounded-lg drop-shadow-lg">
-            <div class="flex flex-col justify-center items-center">
-              <div>
-                <h2 class="text-4xl lg:text-5xl text-center font-bold leading-tight">Lets talk about everything!</h2>
-              </div>
-            </div>
-            <form action="mailto:gungdeaputri22@gmail.com" method="post" enctype="text/plain">
-              <div>
-                <span class="uppercase text-sm text-secondary font-bold">Full Name</span>
-                <input class="w-full bg-gray-300 text-dark mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                  type="text" placeholder="Enter your full name" name="name">
-              </div>
-              <div class="mt-8">
-                <span class="uppercase text-sm text-secondary font-bold">Email</span>
-                <input class="w-full bg-gray-300 text-dark mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                  type="text" placeholder="Enter your email" name="email">
-              </div>
-              <div class="mt-8">
-                <span class="uppercase text-sm text-secondary font-bold">Message</span>
-                <textarea
-                  class="w-full h-32 bg-gray-300 text-dark mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" placeholder="Enter your message" name="message"></textarea>
-              </div>
-              <div class="mt-8 flex justify-center gap-2">
-                <button type="submit"
-                  class="uppercase text-sm font-bold tracking-wide bg-primary text-white p-3 w-full rounded-lg hover:shadow-lg hover:text-dark transition duration-300 ease-in-out" value="send">
-                  Send
-                </button>
-                <button type="reset"
-                  class="uppercase text-sm font-bold tracking-wide bg-primary text-white p-3 w-full rounded-lg hover:shadow-lg hover:text-dark transition duration-300 ease-in-out" value="reset">
-                  Reset
-                </button>
-              </div>
-            </form>
-        </div>
-      </div>
-    </section>
-    <!-- Contact Section End -->
 
     <!-- Footer Section Start -->
     <section id="collaborate" class="pt-32  ">
